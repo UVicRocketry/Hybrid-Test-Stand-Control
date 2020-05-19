@@ -10,9 +10,6 @@
  
  1. That's it!
  
- New Version:
- Open terminal on the Raspberry Pi and run `sudo wget https://github.com/UVicRocketry/Hybrid-Test-Stand-Control/raw/master/pi/first-time_server_setup.sh && bash first-time_server_setup.sh`
- 
 ### Notes
 
  - You can change the install location of the hybrid code as long as you change the relevant paths in `/etc/rc.local`
