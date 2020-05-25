@@ -1,4 +1,0 @@
-# Put this line before the exit statement in /etc/rc.local.
-# The 30 second sleep is to allow the pi's networking to
-# initialize (the 30s is arbitrary but seems to work).
-(sleep 30s && /home/pi/Documents/htsc/pi/starthtsc.sh) &
