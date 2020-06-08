@@ -2,7 +2,7 @@
 
 Follow the "Hybrid Instrumentation and Controls Documentation" guide in the UVR+ Google Drive to set up the pi.
 
-Open terminal on the Raspberry Pi and run: `https://raw.githubusercontent.com/UVicRocketry/Hybrid-Test-Stand-Control/master/server/autoserversetup.sh`
+Open terminal on the Raspberry Pi and run: `wget https://raw.githubusercontent.com/UVicRocketry/Hybrid-Test-Stand-Control/master/server/autoserversetup.sh && bash /home/pi/autoserversetup.sh`
 
 ### Notes
 
