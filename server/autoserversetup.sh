@@ -16,8 +16,8 @@ pip3 install phidget22
 echo "@reboot /home/pi/Documents/htsc/server/starthtsc.sh" | crontab -
 echo "@reboot /home/pi/Documents/htsc/server/starthtsc.sh" | crontab -
 
-# Delete autoserversetup.sh from ~/ and ~/Documents/htsc because running it twice will cause problems.
-rm /home/pi/Documents/htsc/server/autoserversetup.sh /home/pi/autoserversetup.sh 
+# Delete autoserversetup.sh from home directory
+rm /home/pi/autoserversetup.sh 
 
 
 
