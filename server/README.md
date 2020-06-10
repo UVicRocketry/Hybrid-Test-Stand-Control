@@ -11,3 +11,5 @@ Open terminal on the Raspberry Pi and run: `wget https://raw.githubusercontent.c
  - The [nextlog](nextlog.py) script is for managing log files, which are created in `/home/pi/Documents/logs` by
  default. Since the pi has no Real-Time-Clock, the logs are numbered rather than containing a date/time stamp (the higher the
  number, the more recent the log).
+ 
+ - The libphidget22 library in /lib is from here: https://www.phidgets.com/docs/OS_-_Linux
