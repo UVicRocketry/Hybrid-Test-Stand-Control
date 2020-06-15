@@ -13,3 +13,5 @@ Open terminal on the Raspberry Pi and run: `wget https://raw.githubusercontent.c
  number, the more recent the log).
  
  - The libphidget22 library in /lib is from here: https://www.phidgets.com/docs/OS_-_Linux
+ 
+ - A log file will be created from the autoserversetup script called autoserversetuplog.txt
