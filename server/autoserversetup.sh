@@ -23,6 +23,9 @@ echo
 sleep 2
 pip3 install phidget22
 
+# Installing lib-usb package as per https://www.phidgets.com/docs/OS_-_Linux
+sudo apt-get install libusb-1.0-0-dev
+
 # Create a cron job to automatically run startserver.sh after booting. Haven't figured out why it needs to be run twice
 # to actually create the cron job.
 echo
