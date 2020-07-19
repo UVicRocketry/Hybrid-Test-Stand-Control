@@ -46,34 +46,18 @@ echo
 sleep 2
 rm /home/pi/autoserversetup.sh
 
-# Change directory (cd) to lib and unzip pack (tar) the libphidget22 library. Then make and install it according to INSTALL.txt
-cd /home/pi/Documents/htsc/server/lib
-echo
-echo "Unpacking libphidget22 lib..."
-echo
-sleep 2
-tar xvzf /home/pi/Documents/htsc/server/lib/libphidget22-1.6.20200417.tar.gz
-
-echo
-echo "Removing tar file..."
-echo
-sleep 2
-rm libphidget22-1.6.20200417.tar.gz
-
-echo
-echo "Making unpacked lib. This will take awhile..."
-echo
-sleep 2
-cd libphidget22-1.6.20200417/
+# Following the excellent guide posted here: https://artisan-roasterscope.blogspot.com/2017/01/connecting-phidgets-on-linux.html
+wget https://www.phidgets.com/downloads/phidget22/libraries/linux/libphidget22.tar.gz
+tar zxvf libphidget22.tar.gz
+cd libphidget22-*
 ./configure
 make
-
-echo
-echo "Installing lib..."
-echo
-sleep 2
 sudo make install
+echo /usr/local/lib >> sudo /etc/ld.so.conf && sudo ldconfig
+cd /tmp/libphidget22-*
+sudo cp plat/linux/udev/99-libphidget22.rules /etc/udev/rules.d
 
-
-
+echo
+echo
+echo "Please reboot the Raspberry Pi before use!"
 
