@@ -1,6 +1,6 @@
 # Hybrid Test Stand Raspberry Pi Setup
 
-[Follow the documentation in the UVR drive to set up.](https://docs.google.com/document/d/1ulo7Ckkgx2m6BxNc_R7TE3GIf-P8g2ysnO5t9tgAqOs/edit?usp=sharing)
+[Follow the documentation in the UVR drive for a more comprehensive guide.](https://docs.google.com/document/d/1ulo7Ckkgx2m6BxNc_R7TE3GIf-P8g2ysnO5t9tgAqOs/edit?usp=sharing)
 
 Open terminal on the Raspberry Pi and run: `wget https://raw.githubusercontent.com/UVicRocketry/Hybrid-Test-Stand-Control/master/server/autoserversetup.sh && bash /home/pi/autoserversetup.sh >> autoserversetuplog.txt`
 
